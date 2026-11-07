@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffe4ef">
+<title>Happy Birthday, Ali Ki Jaan ❤️</title>
+<style>
+:root{--pink:#ff5f9e;--deep:#b52d68;--rose:#ffd1e2;--cream:#fff9fc}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,'Times New Roman',serif;color:#74304f;background:linear-gradient(145deg,#fff7fb,#ffe2ed 48%,#fff4f8);overflow-x:hidden}
+main{position:relative;z-index:1}
+.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:42px 20px;position:relative;overflow:hidden}
+.glow{position:absolute;width:310px;height:310px;border-radius:50%;background:#ff9fc4;filter:blur(90px);opacity:.38;top:8%;left:50%;transform:translateX(-50%)}
+.card{width:min(680px,100%);padding:clamp(28px,6vw,58px) clamp(20px,5vw,48px);border:1px solid #ffffffc9;border-radius:32px;background:#ffffffa8;box-shadow:0 22px 70px #b52d6820;backdrop-filter:blur(12px);position:relative}
+.eyebrow{font:700 11px Arial,sans-serif;letter-spacing:4px;text-transform:uppercase;color:#c04c7c}
+h1{font-size:clamp(42px,9vw,76px);line-height:1.03;margin:17px 0 12px;color:#a92e65;font-weight:normal}
+h1 span{display:block;color:#f05b98;font-style:italic}
+.subtitle{font-size:clamp(17px,3vw,21px);line-height:1.7;margin:16px auto 25px;max-width:490px}
+.heart{font-size:34px;display:inline-block;animation:beat 1.2s infinite}
+@keyframes beat{50%{transform:scale(1.22)}}
+.btn{border:0;border-radius:999px;padding:15px 25px;background:linear-gradient(110deg,#f65b99,#c83d78);color:white;font:700 14px Arial,sans-serif;letter-spacing:.5px;box-shadow:0 10px 25px #d94a8738;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px #d94a8750}
+.hint{font:12px Arial,sans-serif;color:#a75b7b;margin-top:15px}
+section{padding:75px 20px;text-align:center}
+.section-card{max-width:760px;margin:auto;padding:35px 25px;border-radius:28px;background:#fff9fce8;box-shadow:0 16px 45px #b52d6814;border:1px solid white}
+h2{font-size:clamp(30px,6vw,45px);font-weight:normal;color:#b3336d;margin:0 0 18px}
+.message{font-size:19px;line-height:1.9;max-width:620px;margin:0 auto}
+.cake{font-size:92px;margin:15px 0 5px;filter:drop-shadow(0 9px 8px #d65c8c22);animation:bob 3s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px)}}
+.letter{display:none;margin:25px auto 0;max-width:590px;padding:24px;border-radius:20px;background:#fff0f6;border:1px dashed #ed8bb2;font-size:18px;line-height:1.85;animation:appear .6s ease}
+.letter.show{display:block}
+@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.signature{font-style:italic;color:#c03e78;font-size:25px;margin-top:22px}
+footer{text-align:center;padding:30px 15px 45px;color:#a75b7b;font:12px Arial,sans-serif;letter-spacing:1px}
+.float{position:fixed;bottom:-35px;z-index:0;pointer-events:none;animation:rise linear forwards;opacity:.65}
+@keyframes rise{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+.sparkle{position:absolute;color:#ee78a8;animation:twinkle 2s infinite alternate}
+@keyframes twinkle{to{opacity:.25;transform:scale(.7)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div class="glow"></div>
+    <span class="sparkle" style="top:15%;left:12%;font-size:25px">✧</span>
+    <span class="sparkle" style="top:22%;right:13%;font-size:30px;animation-delay:.7s">✦</span>
+    <div class="card">
+      <div class="eyebrow">A little birthday surprise</div>
+      <div class="heart">❤️</div>
+      <h1>Happy Birthday <span>Ayesha</span></h1>
+      <p class="subtitle">Aaj ka din bohat special hai, kyun ke aaj meri pyari Ayesha ka birthday hai. 🌷</p>
+      <button class="btn" onclick="document.getElementById('wishes').scrollIntoView({behavior:'smooth'})">OPEN YOUR SURPRISE ✨</button>
+      <div class="hint">Made with love, just for you</div>
+    </div>
+  </header>
+
+  <section id="wishes">
+    <div class="section-card">
+      <div class="eyebrow">From the heart</div>
+      <h2>For You, With Love 🌹</h2>
+      <p class="message">Tumhari zindagi ka har naya din khushiyon, sukoon, kamyabi aur pyari si muskurahat se bhara ho. Tumhare saare achhe khwab poore hon, aur aane wala har saal tumhare liye pehle se bhi zyada khoobsurat ho. <br><br><strong>Hamesha khush rehna. Happy Birthday! 💗</strong></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-card">
+      <div class="eyebrow">Make a wish</div>
+      <h2>A Birthday Cake For You 🎂</h2>
+      <div class="cake">🎂</div>
+      <p class="message">Aankhein band karo, ek pyari si wish maango… ✨</p>
+      <button class="btn" style="margin-top:22px" onclick="celebrate()">MY WISH IS MADE 💖</button>
+      <p id="wishDone" class="message" style="display:none;margin-top:20px;color:#c03e78">May your wish come true! 🎉</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-card">
+      <div class="eyebrow">One more little thing</div>
+      <h2>A Little Letter 💌</h2>
+      <p class="message">Ek chhota sa message, sirf tumhare liye…</p>
+      <button class="btn" style="margin-top:22px" onclick="openLetter()">OPEN MY LETTER 💌</button>
+      <div class="letter" id="letter">
+        Aaj tumhara din hai, aur meri dua hai ke tumhari duniya hamesha rangon aur khushiyon se roshan rahe. Har mushkil aasaan ho, har subah umeed laaye aur har shaam sukoon. Is birthday par tumhein dher saari khushiyan milen. <br><br>
+        <strong>Happy Birthday, Ayesha! ❤️</strong>
+        <div class="signature">Ayesha x Ali</div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>MADE WITH ❤️ &nbsp; • &nbsp; AYESHA X ALI</footer>
+<script>
+function floatHeart(){
+ const el=document.createElement('div');el.className='float';
+ const symbols=['💗','💕','🌸','✨','❤️'];el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+ el.style.left=Math.random()*100+'vw';el.style.fontSize=(15+Math.random()*18)+'px';
+ el.style.animationDuration=(6+Math.random()*5)+'s';document.body.appendChild(el);
+ setTimeout(()=>el.remove(),11500);
+}
+setInterval(floatHeart,850);
+function openLetter(){document.getElementById('letter').classList.toggle('show')}
+function celebrate(){
+ document.getElementById('wishDone').style.display='block';
+ for(let i=0;i<28;i++){setTimeout(floatHeart,i*55)}
+}
+</script>
+</body>
+</html>
